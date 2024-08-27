@@ -1235,7 +1235,7 @@ var countryCards = document.querySelectorAll(".country-cards");
 var zoomOutBtn = document.querySelector("#zoomOutBtn");
 var lastSelectedCard = null;
 var svgElement = document.getElementById("svgMap");
-var defaultViewBox = { x: 450, y: 200, width: 800, height: 340 };
+var defaultViewBox = { x: 500, y: 300, width: 700, height: 290 };
 var startX, startY;
 var currentViewBox = JSON.parse(JSON.stringify(defaultViewBox));
 var egyptSvg = document.getElementById("Egypt");
@@ -1400,7 +1400,7 @@ function handleCountryClick(event) {
     });
     resetStyles(event);
     var path = event.target;
-    path.style.fill = "#A3A3A8";
+    path.style.fill = "#ADB5F0";
     var dataSetID = event.target.dataset.country;
     var countryID = event.target.id;
     var bbox = path.getBBox();

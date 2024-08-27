@@ -35,7 +35,7 @@ path:hover {
   fill: #D4D6F0 !important;
 }
 .Inactive {
-  fill: #f2f4ff;
+  fill: #DEE1F9;
 }
 .pin {
   transition: opacity 0.3s;
@@ -73,6 +73,7 @@ path:hover {
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
   z-index: 100;
   transition: all 0.3s;
+  opacity: 0.9;
 }
 .country-cards {
   margin-top: 14px;
@@ -120,13 +121,20 @@ path:hover {
 .zoomOutBtnMap {
   opacity: 0;
   position: absolute;
-  width: 45px;
+  width: 50px;
   border: 1px solid transparent;
   border-radius: 7px;
-  top: 5%;
+  bottom: 5%;
   right: 3%;
   z-index: 100;
   transition: all 0.3s;
+  padding: 1px;
+  border-radius: 15px;
+}
+.zoomOutBtnMap > img{
+  background-color: #001081;
+  border-radius: 15px;
+  padding: 5px;
 }
 .zoomOutBtnMapActive{
   opacity: 1;
