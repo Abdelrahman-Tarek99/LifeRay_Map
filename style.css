@@ -2,6 +2,11 @@
   cursor: pointer;
   position: relative;
 }
+#mapContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
 .country {
   cursor: pointer;
 }
@@ -32,10 +37,10 @@ path:hover {
   fill: #d4d6f0;
 }
 .active {
-  fill: #D4D6F0 !important;
+  fill: #d4d6f0 !important;
 }
 .Inactive {
-  fill: #DEE1F9;
+  fill: #dee1f9;
 }
 .pin {
   transition: opacity 0.3s;
@@ -57,12 +62,12 @@ path:hover {
   position: absolute;
   /* height: 100%; */
   top: 50%;
-  left: 7%;
+  right: 7%;
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  transform: translateY(-50%);
+  transform: translateY(-65%);
 }
 .country-cards {
   display: none;
@@ -131,18 +136,16 @@ path:hover {
   padding: 1px;
   border-radius: 15px;
 }
-.zoomOutBtnMap > img{
-  background-color: #001081;
+.zoomOutBtnMap > img {
   border-radius: 15px;
-  padding: 5px;
 }
-.zoomOutBtnMapActive{
+.zoomOutBtnMapActive {
   opacity: 1;
 }
 .zoomOutBtnMap:hover {
   border-color: #4477ff;
   scale: 1.05;
 }
-.country-cards:focus{
+.country-cards:focus {
   outline: none;
 }
